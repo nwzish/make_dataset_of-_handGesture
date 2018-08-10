@@ -1,8 +1,7 @@
 import cv2
 import os
 import copy
-import numpy as np
-import time
+
 
 dataColor = (0,250,0)
 font = cv2.FONT_HERSHEY_PLAIN
@@ -38,7 +37,6 @@ def main():
             cv2.putText(window, 'Pic storing : ON' ,(fx,fy),font,1.2, dataColor,  2,1)
             cv2.imwrite('data/{0}/{0}_{1}.png'.format(className,count),roi)
             count+=1
-            time.sleep(.2)
         else:
             dataColor = (0,0,250)
             cv2.putText(window, 'Pic storing : ON' ,(fx,fy),font,1.2, dataColor,  2,1)
