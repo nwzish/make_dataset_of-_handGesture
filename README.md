@@ -1,1 +1,1 @@
-# make_dataset_of-_handGesture
+# make_dataset_of_handGesture
